@@ -11,6 +11,10 @@ var chalk = require( 'chalk' );
  * @returns {undefined}
  */
 function install() {
+  if ( !this.options.PromtAnswers.get( 'install-coveralls' ) ) {
+    return;
+  }
+
   this.log( chalk.cyan( 'npm install' ) + ' for ' + this.options.namespace );
 
   this.npmInstall(
