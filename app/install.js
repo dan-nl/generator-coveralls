@@ -15,7 +15,8 @@ function install() {
     return;
   }
 
-  this.log( chalk.cyan( 'npm install' ) + ' for ' + this.options.namespace );
+  this.log( chalk.cyan( 'install' ) );
+  this.log( chalk.green( '   package' ) + ' coveralls' );
 
   this.npmInstall(
     [ 'coveralls' ],

@@ -10,7 +10,7 @@ var addPackageJsonScript = require( './helpers/add-package-json-script' );
 /**
  * @returns {undefined}
  */
-function writing() {
+function configuring() {
   if ( !this.options.PromptAnswers.get( 'install-coveralls' ) ) {
     return;
   }
@@ -18,4 +18,4 @@ function writing() {
   addPackageJsonScript( this );
 }
 
-module.exports = writing;
+module.exports = configuring;
